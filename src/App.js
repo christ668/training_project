@@ -1,15 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
+
 import "./App.css";
-import Header from "./header.js";
-import Profile from "./profile.js";
-import NextMeetup from "./nextMeetup.js";
-import AboutMeetup from "./aboutMeetup.js";
-import Member from "./member.js";
-import PastMeet from "./passMeet.js";
-import Copyright from "./copyright.js";
+import Header from "./Components/header.js";
+import Profile from "./Components/profile.js";
+import NextMeetup from "./Components/nextMeetup.js";
+import AboutMeetup from "./Components/aboutMeetup.js";
+import Member from "./Components/member.js";
+import PastMeet from "./Components/passMeet.js";
+import Copyright from "./Components/copyright.js";
 
 
 

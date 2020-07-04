@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -10,17 +9,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
-  },
   title: {
     flexDirection: "column",
     padding: theme.spacing(5),
-  },
-  content: {
-    flexDirection: "column",
-    paddingLeft: theme.spacing(8),
   },
 }));
 

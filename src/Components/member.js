@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+
 
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -12,11 +12,7 @@ import Grid from "@material-ui/core/Grid";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-  },
-  spacer: {
-    paddingLeft: theme.spacing(2),
-    paddingBottom: theme.spacing(3),
-  },
+  },  
   head:{
     paddingTop: theme.spacing(2),
     fontWeight: theme.typography.fontWeightBold,  
