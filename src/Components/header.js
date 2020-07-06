@@ -9,16 +9,20 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(2)
   },
   title: {
-    padding: theme.spacing(0, 5),
+    padding: theme.spacing(0, 5)
   },
-  button:{
-    marginLeft: theme.spacing(105),
+  spacer: {
+    flexGrow: 1,
+    padding: theme.spacing(0, 5)
+  },
+  button: {
+    padding: theme.spacing(0, 5)
   }
 }));
 
@@ -29,7 +33,12 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+          >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
@@ -41,7 +50,12 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             explore
           </Typography>
-          <Button className={classes.button} color="inherit">Login</Button>
+          <Typography variant="h6" className={classes.spacer}>
+            &nbsp;
+          </Typography>
+          <Button className={classes.button} color="inherit">
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

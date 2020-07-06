@@ -11,28 +11,32 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
-  },  
-  head:{
+    width: "100%"
+  },
+  head: {
     paddingTop: theme.spacing(2),
-    fontWeight: theme.typography.fontWeightBold,  
+    fontWeight: theme.typography.fontWeightBold
   },
   title: {
     flexDirection: "column",
-    padding: theme.spacing(5),
+    padding: theme.spacing(5)
+  },
+  showAll: {
+    paddingTop: theme.spacing(7),
+    textAlign: "center",
   },
   image: {
     backgroundColor: "#d1e0e0",
     height: "8vh",
-    padding: theme.spacing(2.5),
+    padding: theme.spacing(2.5)
   },
   orange: {
     color: theme.palette.getContrastText(deepOrange[500]),
     backgroundColor: deepOrange[500],
     width: theme.spacing(7),
     height: theme.spacing(7),
-    padding: theme.spacing(1),
-  },
+    padding: theme.spacing(1)
+  }
 }));
 
 export default function ButtonAppBar() {
@@ -40,9 +44,18 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h4" className={classes.title}>
-        Members{" "}
-      </Typography>
+      <Grid container item xs={12} spacing={1}>
+        <Grid item xs={9}>
+          <Typography variant="h4" className={classes.title}>
+            Members{" "}
+          </Typography>
+        </Grid>
+        <Grid item xs={3}>
+          <Typography variant="h6" className={classes.showAll} >
+            see all{" "}
+          </Typography>
+        </Grid>
+      </Grid>
       <CssBaseline />
       <Container fixed>
         <Typography

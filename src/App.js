@@ -9,19 +9,17 @@ import Member from "./Components/member.js";
 import PastMeet from "./Components/passMeet.js";
 import Copyright from "./Components/copyright.js";
 
-
-
 class App extends React.Component {
   render() {
     return (
       <div>
         <Header />
-        <Profile/>
+        <Profile />
         <NextMeetup />
         <AboutMeetup />
         <Member />
-        <PastMeet/>
-        <Copyright/>
+        <PastMeet />
+        <Copyright />
       </div>
     );
   }
